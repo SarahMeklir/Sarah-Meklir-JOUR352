@@ -49,6 +49,28 @@
     .blue{
         background: #429DFF;
     }
+    #navigation{
+        color: #EFD6BE;
+        background: #3E582A;
+    }
+    #experience{
+        background: #429DFF;
+    }
+    #content{
+        background: #429DFF;
+    }
+    #jobnames{
+        color: #3E582A;
+        background: #EFD6BE;
+    }
+    #jobdesc{
+        color: #EFD6BE;
+        background: #3E582A;
+    }
+    #button{
+        color: #3E582A;
+        background: #D9FFBB;
+    }
     h1{
         margin: 40px 0px 0px 0px;
         font-size: 30px;

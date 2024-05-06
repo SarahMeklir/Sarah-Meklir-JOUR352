@@ -1,8 +1,8 @@
 /*put palette colors here
- * 
- * 
- * 
- * 
+ * mets ORANGE: #FF5910
+ * mets blue:  #002D72
+ * light blue: #429DFF
+ * dark green: #3E582A
 */
 #BackgroundVideo {
   position: fixed;
@@ -16,4 +16,110 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+@media {
+    img {
+        width:100%;
+        margin: 40px 0px 0px 0px;
+    }
+    
+    #topper{
+        background-color: #429DFF;
+        color: #D9FFBB;
+    }
+    
+    #nav {
+        padding: 10px 60px 10px 60px;
+    }
+    .headline{
+        color: #D9FFBB;
+    }
+    .blue{
+        background: #429DFF;
+    }
+    #navigation{
+        color: #EFD6BE;
+        background: #3E582A;
+    }
+    #backgroundsec{
+        background: #429DFF;
+    }
+    #content{
+        background: #429DFF;
+    }
+    #authorsnote{
+        color: #3E582A;
+        background: #EFD6BE;
+    }
+    #transcript{
+        color: #EFD6BE;
+        background: #3E582A;
+    }
+    #pull-quote{
+        
+    }
+    #button{
+        color: #3E582A;
+        background: #D9FFBB;
+    }
+    h1{
+        margin: 40px 0px 0px 0px;
+        font-size: 30px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    h2{
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+    h3{
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    h6{
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+    p{
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+@media (min-width:576px){
+    h1{
+        font-size: 35px;
+    }
 }

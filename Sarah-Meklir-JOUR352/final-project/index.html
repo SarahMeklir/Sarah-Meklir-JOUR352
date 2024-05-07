@@ -18,40 +18,43 @@
 
     <body>
         <div class="container-fluid" id="topper">
-            <div class="container">
-            <video autoplay muted loop id="BackgroundVideo">
-                <source
-                    src="Homescreen video web project.mp4"
-                    type="video/mp4" />
-                Your browser does not support this video.
-            </video>
-            <div class="overlay">
-                <h1 class="header">The Mets don't break up double plays</h1>
-                <h2>A breakdown</h2>
-                <h3>Adapted by Sarah Meklir</h3>
-                <button id="myBtn" onclick="myFunction()">Pause</button>
-            </div>
-            <script>
-                var video = document.getElementById("BackgroundVideo");
-                var btn = document.getElementById("myBtn");
+            <!-- This is where I found the code for embedding the header video: 
+    https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_fullscreen_video -->
 
-                function myFunction() {
-                    if (video.paused) {
-                        video.play();
-                        btn.innerHTML = "Pause";
-                    } else {
-                        video.pause();
-                        btn.innerHTML = "Play";
+            <div class="container">
+                <video autoplay muted loop id="BackgroundVideo">
+                    <source
+                        src="Homescreen video web project.mp4"
+                        type="video/mp4" />
+                    Your browser does not support this video.
+                </video>
+                <div class="overlay">
+                    <h1 class="header">The Mets don't break up double plays</h1>
+                    <h2>A breakdown</h2>
+                    <h3>Adapted by Sarah Meklir</h3>
+                    <button id="myBtn" onclick="myFunction()">Pause</button>
+                </div>
+                <script>
+                    var video = document.getElementById("BackgroundVideo");
+                    var btn = document.getElementById("myBtn");
+
+                    function myFunction() {
+                        if (video.paused) {
+                            video.play();
+                            btn.innerHTML = "Pause";
+                        } else {
+                            video.pause();
+                            btn.innerHTML = "Play";
+                        }
                     }
-                }
-            </script>
+                </script>
             </div>
-            <br/>
+            <br />
         </div>
         <div class="container-fluid" id="content">
             <div class="row">
                 <div id="openingNote" class="col-sm-12">
-                <br/>
+                    <br />
                     <h2 class="subheading">A note before reading:</h2>
                     <p>
                         The text is pulled directly from a YouTube video by user
@@ -62,8 +65,9 @@
                         rather than in standard journalistic syntax. However,
                         since it is a roughtly 4,000 word transcript, I will not
                         be putting quotation marks around each line said in the
-                        video. Instead, they will be styled with navy background and white text with a Mets-orange border to be
-                        easily differentiated.
+                        video. Instead, they will be styled with navy background
+                        and white text with a Mets-orange border to be easily
+                        differentiated.
                     </p>
                     <p>
                         Some background on the “fight,” before we get into it:
@@ -107,11 +111,17 @@
                         did a breakdown on it. I was very interested in it in my
                         breakdown.
                     </p>
-                    <video autoplay muted loop id="EmbeddedVideo" src="First slide vid.mp4" type="video/mp4" controls>
-                    </video>
+                    <video
+                        autoplay
+                        muted
+                        loop
+                        id="EmbeddedVideo"
+                        src="First slide vid.mp4"
+                        type="video/mp4"
+                        controls></video>
                 </div>
                 <div id="authorsnote" class="col-sm-12">
-                    <br/>
+                    <br />
                     <h2 class="subheading">Watching the replay</h2>
                 </div>
                 <div id="transcript" class="col-sm-12">
@@ -121,7 +131,6 @@
                         after watching the replay and he says, “you think that's
                         [expletive] okay?” and you can see Rhys is like, “yeah?”
                     </p>
-    <!-- Insert pull quote -->
                     <p class="pull-quote">
                         So there's just a disconnect between what's a good
                         slide, what's a bad slide, what's allowed, what's not
@@ -165,8 +174,10 @@
             </div>
             <div class="row">
                 <div id="authorsnote" class="col-sm-12">
-               <br/>
-                    <h2 class="subheading">Looking into McNeil’s “dirty” past slide:</h2>
+                    <br />
+                    <h2 class="subheading">
+                        Looking into McNeil’s “dirty” past slide:
+                    </h2>
                 </div>
                 <div id="transcript" class="col-sm-12">
                     <p>
@@ -178,9 +189,17 @@
                         right, let's go find that play, I want to see if this is
                         just a screenshot or is that really a dirty play.
                     </p>
-    <!-- WOO HOO Insert video of McNeil's slide here -->
-                    <video autoplay muted loop id="EmbeddedVideo" src="McNeils%20not-dirty%20slide.mp4" type="video/mp4" controls>
-                    </video>
+                    <!-- WOO HOO Insert video of McNeil's slide here -->
+                    <center>
+                        <video
+                            autoplay
+                            muted
+                            loop
+                            id="EmbeddedVideo"
+                            src="McNeils%20not-dirty%20slide.mp4"
+                            type="video/mp4"
+                            controls></video>
+                    </center>
                     <p>
                         So I pulled up the play and here it is. [Daniel]
                         Vogelbach hits it to second, McNeil slides and they run
@@ -223,9 +242,17 @@
                         runner on first and how he tries to break up double
                         plays.
                     </p>
-     <!-- WOO HOO Insert compilation video of McNeil's slides here -->
-                    <video autoplay muted loop id="EmbeddedVideo" src="Mcneil compilation one.mp4" type="video/mp4" controls>
-                    </video>
+                    <!-- WOO HOO Insert compilation video of McNeil's slides here -->
+                    <center>
+                        <video
+                            autoplay
+                            muted
+                            loop
+                            id="EmbeddedVideo"
+                            src="Mcneil compilation one.mp4"
+                            type="video/mp4"
+                            controls></video>
+                    </center>
                     <p>
                         So as you can see, he doesn't try to break up the Double
                         Play. It's almost like it's not an option in his head. I
@@ -233,9 +260,17 @@
                         lot down because this got too long.
                     </p>
                     <p>A lot of them look like this:</p>
-    <!-- WOO HOO More compilation video here -->
-                    <video autoplay muted loop id="EmbeddedVideo" src="Mcneil%20compilation%20two.mp4" type="video/mp4" controls>
-                    </video>
+                    <!-- WOO HOO More compilation video here -->
+                    <center>
+                        <video
+                            autoplay
+                            muted
+                            loop
+                            id="EmbeddedVideo"
+                            src="Mcneil%20compilation%20two.mp4"
+                            type="video/mp4"
+                            controls></video>
+                    </center>
                     <p>
                         I mean he's not even — he's being considerate, he's
                         being gentlemanly, he's saying, “hey I don't want to get
@@ -243,9 +278,17 @@
                         the double play, go ahead and turn it. Who am I to try
                         to stop it?”
                     </p>
-    <!-- WOO HOO More compilation video here -->
-                    <video autoplay muted loop id="EmbeddedVideo" src="Mcneil%20compilation%20three.mp4" type="video/mp4" controls>
-                    </video>
+                    <!-- WOO HOO More compilation video here -->
+                    <center>
+                        <video
+                            autoplay
+                            muted
+                            loop
+                            id="EmbeddedVideo"
+                            src="Mcneil%20compilation%20three.mp4"
+                            type="video/mp4"
+                            controls></video>
+                    </center>
                     <p>
                         What was that? You know? What was that one? If I go
                         backwards here, when I was finding these, there were
@@ -284,9 +327,17 @@
                             </li>
                         </ol>
                         <p>Here's how he attacks it:</p>
-         <!-- WOO HOO Compilation of Hoskins' slides here -->
-                    <video autoplay muted loop id="EmbeddedVideo" src="Hoskins%20compilation%20one.mp4" type="video/mp4" controls>
-                    </video>
+                        <!-- WOO HOO Compilation of Hoskins' slides here -->
+                        <center>
+                            <video
+                                autoplay
+                                muted
+                                loop
+                                id="EmbeddedVideo"
+                                src="Hoskins%20compilation%20one.mp4"
+                                type="video/mp4"
+                                controls></video>
+                        </center>
                         <p>
                             So as you can see, what Hoskins does is he gets his
                             ass down the line quick, when he gets to that cutoff
@@ -300,9 +351,17 @@
                         <p class="pull-quote">
                             He's never injured someone at second.
                         </p>
-        <!-- WOO HOO Video continues -->
-                    <video autoplay muted loop id="EmbeddedVideo" src="Hoskins%20compilation%20two.mp4" type="video/mp4" controls>
-                    </video>
+                        <!-- WOO HOO Video continues -->
+                        <center>
+                            <video
+                                autoplay
+                                muted
+                                loop
+                                id="EmbeddedVideo"
+                                src="Hoskins%20compilation%20two.mp4"
+                                type="video/mp4"
+                                controls></video>
+                        </center>
                         <p>That's a good example of what he does.</p>
                         <p class="pull-quote">
                             He’s never injured the player. There might be
@@ -341,7 +400,9 @@
                 </div>
                 <div class="row">
                     <div id="authorsnote" class="col-sm-12">
-                        <h2 class="subheading">Comparison of baserunning style:</h2>
+                        <h2 class="subheading">
+                            Comparison of baserunning style:
+                        </h2>
                     </div>
                     <div id="transcript" class="col-sm-12">
                         <p>
@@ -380,9 +441,17 @@
                             McNeil. Again, McNeil is faster. Here's the ball hit
                             to the short stop and flipped to second base.
                         </p>
-         <!-- WOO HOO Video compilation of Hoskins -->
-                    <video autoplay muted loop id="EmbeddedVideo" src="comparison%20one.mp4" type="video/mp4" controls>
-                    </video>
+                        <!-- WOO HOO Video compilation of Hoskins -->
+                        <center>
+                            <video
+                                autoplay
+                                muted
+                                loop
+                                id="EmbeddedVideo"
+                                src="comparison%20one.mp4"
+                                type="video/mp4"
+                                controls></video>
+                        </center>
                         <p>
                             A very similar play, Rhys is already in frame and
                             he's sliding. He’s not going down until he hits that
@@ -412,9 +481,17 @@
                             hits the bat, I sync that up, and then the ball is
                             hit to the shortstop.
                         </p>
-         <!-- WOO HOO comparison video compilation plays -->
-                    <video autoplay muted loop id="EmbeddedVideo" src="comparison%20two.mp4" type="video/mp4" controls>
-                    </video>
+                        <!-- WOO HOO comparison video compilation plays -->
+                        <center>
+                            <video
+                                autoplay
+                                muted
+                                loop
+                                id="EmbeddedVideo"
+                                src="comparison%20two.mp4"
+                                type="video/mp4"
+                                controls></video>
+                        </center>
                         <p>
                             And as they flip it to the second baseman, you can
                             see Rhys Hoskins is in frame and he's about to get
@@ -431,9 +508,17 @@
                             where the blue marker is on my timeline is when the
                             bat hits the ball.
                         </p>
-        <!-- WOO HOO comparison video plays again -->
-                    <video autoplay muted loop id="EmbeddedVideo" src="comparison%20three.mp4" type="video/mp4" controls>
-                    </video>
+                        <!-- WOO HOO comparison video plays again -->
+                        <center>
+                            <video
+                                autoplay
+                                muted
+                                loop
+                                id="EmbeddedVideo"
+                                src="comparison%20three.mp4"
+                                type="video/mp4"
+                                controls></video>
+                        </center>
                         <p>
                             And if you watch through to when Rhys gets to the
                             bag he's by the cut on the two on the right already
@@ -465,9 +550,17 @@
                             double play to end the first inning. Lindor just
                             runs through the bag and they explain why here.
                         </p>
-         <!-- WOO HOO comparison video plays again -->
-                    <video autoplay muted loop id="EmbeddedVideo" src="ODD%20METS%20CLIP.mp4" type="video/mp4" controls>
-                    </video>
+                        <!-- WOO HOO comparison video plays again -->
+                        <center>
+                            <video
+                                autoplay
+                                muted
+                                loop
+                                id="EmbeddedVideo"
+                                src="ODD%20METS%20CLIP.mp4"
+                                type="video/mp4"
+                                controls></video>
+                        </center>
                     </div>
                     <div id="authorsnote" class="col-sm-12">
                         <p>
@@ -522,7 +615,7 @@
                             And while he's doing that the runner on third will
                             score. That’s crazy weird.
                         </p>
-        <!-- insert pull quote -->
+                        <!-- insert pull quote -->
                         <p class="pull-quote">
                             I think the Mets think you can't break up double
                             plays.
@@ -537,12 +630,20 @@
                             make the dude uncomfortable to throw it, so here's
                             what I found:
                         </p>
-        <!-- WOO HOO Mets comparison video plays -->
-                    <video autoplay muted loop id="EmbeddedVideo" src="BAD%20METS.mp4" type="video/mp4" controls>
-                    </video>
+                        <!-- WOO HOO Mets comparison video plays -->
+                        <center>
+                            <video
+                                autoplay
+                                muted
+                                loop
+                                id="EmbeddedVideo"
+                                src="BAD%20METS.mp4"
+                                type="video/mp4"
+                                controls></video>
+                        </center>
                         <p>They all do it.</p>
                         <p>What is that?</p>
-        <!-- insert drawing of baseline and runner slowing down diagram -->
+                        <!-- insert drawing of baseline and runner slowing down diagram -->
                         <p>
                             There's not a runner on second that could be
                             rounding third in this one, so that strategy doesn't
@@ -559,9 +660,17 @@
                             [Pete} Alonso and [Mark] Canha last year, they acted
                             normal.
                         </p>
-         <!-- WOO HOO Good Mets video plays -->
-                    <video autoplay muted loop id="EmbeddedVideo" src="GOOD%20METS.mp4" type="video/mp4" controls>
-                    </video>
+                        <!-- WOO HOO Good Mets video plays -->
+                        <center>
+                            <video
+                                autoplay
+                                muted
+                                loop
+                                id="EmbeddedVideo"
+                                src="GOOD%20METS.mp4"
+                                type="video/mp4"
+                                controls></video>
+                        </center>
                         <p>
                             That is the same as the Rhys Hoskin slide, you know,
                             good job by Pete. He’s at the cut of the grass, he's
@@ -614,9 +723,17 @@
                             to this search that I did for you guys so you can go
                             check it out.
                         </p>
-          <!-- WOO HOO comparison video plays again -->
-                        <video autoplay muted loop id="EmbeddedVideo" src="Other teams video.mp4" type="video/mp4" controls>
-                        </video>
+                        <!-- WOO HOO comparison video plays again -->
+                        <center>
+                            <video
+                                autoplay
+                                muted
+                                loop
+                                id="EmbeddedVideo"
+                                src="Other teams video.mp4"
+                                type="video/mp4"
+                                controls></video>
+                        </center>
                     </div>
                 </div>
                 <div class="row">
@@ -696,9 +813,17 @@
                             same search and you find the Mets… it hurts my
                             baseball soul. You know? Look at this.
                         </p>
-         <!-- WOO HOO video of nimmo plays  -->
-                        <video autoplay muted loop id="EmbeddedVideo" src="Nimmo video.mp4" type="video/mp4" controls>
-                        </video>
+                        <!-- WOO HOO video of nimmo plays  -->
+                        <center>
+                            <video
+                                autoplay
+                                muted
+                                loop
+                                id="EmbeddedVideo"
+                                src="Nimmo video.mp4"
+                                type="video/mp4"
+                                controls></video>
+                        </center>
                         <p>
                             What are we doing? what is going on? What are we
                             doing? This is [Brandon] Nimmo! He’s fast. So yeah,
@@ -733,9 +858,17 @@
                             back to the Premiere video of it — the reason it
                             looks dirty is because McNeil bobbles this ball.
                         </p>
-         <!-- WOOHOO insert original vid of slide again -->
-                        <video autoplay muted loop id="EmbeddedVideo" src="First slide vid.mp4" type="video/mp4" controls>
-                        </video>
+                        <!-- WOOHOO insert original vid of slide again -->
+                        <center>
+                            <video
+                                autoplay
+                                muted
+                                loop
+                                id="EmbeddedVideo"
+                                src="First slide vid.mp4"
+                                type="video/mp4"
+                                controls></video>
+                        </center>
                         <p>
                             Also, McNeil just stands on top of the bag because I
                             think he thinks you can't do this. But you can.
@@ -824,7 +957,3 @@
         </div>
     </body>
 </html>
-<!--
-<video autoplay muted loop id="BackgroundVideo" src="Homescreen video web project.mp4" type="video/mp4">
-            </video>
- -->

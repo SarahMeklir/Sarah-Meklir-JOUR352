@@ -46,7 +46,7 @@
     background: #ff5910;
     color: #002d72;
     border: medium inset;
-    border-color: #002D72;
+    border-color: #002d72;
 }
 .headline {
     position: absolute;
@@ -83,20 +83,17 @@
 
 @media {
     #topper {
-        background-color: #002D72;
-        color: #d9ffbb;
+        background-color: #002d72;
     }
 
-    #nav {
-        padding: 10px 60px 10px 60px;
-    }
-
-    .blue {
-        background: #429dff;
-    }
-    #navigation {
-        color: #efd6be;
-        background: #3e582a;
+    .pull-quote {
+        float: left();
+        max-width: 200;
+        color: #ff5910;
+        font-size: 30px;
+        line-height: 1;
+        font-style: italic;
+        padding: 14px;
     }
     #backgroundsec {
         background: #429dff;
@@ -104,15 +101,16 @@
     #content {
         background: #429dff;
     }
-    .subheading{
-        color: #002D72;
+    .subheading {
+        color: #002d72;
         font: roboto, bold;
         padding-top: 5px;
         text-align: center;
         -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #FF5910;    }
+        -webkit-text-stroke-color: #ff5910;
+    }
     #authorsnote {
-        color: #002D72;
+        color: #002d72;
         background: beige;
         text-align: center;
     }
@@ -122,15 +120,15 @@
     }
     #transcript {
         color: white;
-        background: #002D72;
+        background: #002d72;
         border: outset;
         border-width: 2px;
-        border-color: #FF5910;
+        border-color: #ff5910;
         padding-top: 5px;
     }
     #pull-quote {
         background: rgba(0, 0, 255, 0.68);
-        color: #FF5910;
+        color: #ff5910;
     }
     #EmbeddedVideo {
         max-width: 50%;

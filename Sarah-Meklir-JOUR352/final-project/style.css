@@ -5,121 +5,173 @@
  * dark green: #3E582A
 */
 #BackgroundVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  max-width: 100%;
-  max-height: 100%;
+    position: top;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    max-height: 100%;
+}
+.container {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.container video {
+    position: top;
+    z-index: 0;
+    margin: 0;
+}
+.overlay {
+    position: absolute;
+    left: 32;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background: rgba(255, 89, 16, 0.54);
+    padding: 10px;
+    color: #f1f1f1;
+    max-width: 100%;
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+#myBtn:hover {
+    background: #ff5910;
+    color: #002d72;
+    border: medium inset;
+    border-color: #002D72;
 }
 .headline {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .roboto-bold {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 .roboto-medium {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 .roboto-regular {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 .roboto-light {
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 .roboto-thin {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: normal;
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-style: normal;
 }
 
 @media {
-    img {
-        width:100%;
-        margin: 40px 0px 0px 0px;
+    #topper {
+        background-color: #002D72;
+        color: #d9ffbb;
     }
-    
-    #topper{
-        background-color: #429DFF;
-        color: #D9FFBB;
-    }
-    
+
     #nav {
         padding: 10px 60px 10px 60px;
     }
-    .headline{
-        color: #D9FFBB;
+
+    .blue {
+        background: #429dff;
     }
-    .blue{
-        background: #429DFF;
+    #navigation {
+        color: #efd6be;
+        background: #3e582a;
     }
-    #navigation{
-        color: #EFD6BE;
-        background: #3E582A;
+    #backgroundsec {
+        background: #429dff;
     }
-    #backgroundsec{
-        background: #429DFF;
+    #content {
+        background: #429dff;
     }
-    #content{
-        background: #429DFF;
+    .subheading{
+        color: #002D72;
+        font: roboto, bold;
+        padding-top: 5px;
+        text-align: center;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #FF5910;    }
+    #authorsnote {
+        color: #002D72;
+        background: beige;
+        text-align: center;
     }
-    #authorsnote{
-        color: #3E582A;
-        background: #EFD6BE;
+    #openingNote {
+        background: beige;
+        text-align: left;
     }
-    #transcript{
-        color: #EFD6BE;
-        background: #3E582A;
+    #transcript {
+        color: white;
+        background: #002D72;
+        border: outset;
+        border-width: 2px;
+        border-color: #FF5910;
+        padding-top: 5px;
     }
-    #pull-quote{
-        
+    #pull-quote {
+        background: rgba(0, 0, 255, 0.68);
+        color: #FF5910;
     }
-    #button{
-        color: #3E582A;
-        background: #D9FFBB;
+    #EmbeddedVideo {
+        max-width: 50%;
+        max-height: 50%;
     }
-    h1{
+    #button {
+        color: #3e582a;
+        background: #d9ffbb;
+    }
+
+    h1 {
         margin: 40px 0px 0px 0px;
         font-size: 30px;
         font-family: "Roboto", sans-serif;
         font-weight: 700;
         font-style: normal;
     }
-    h2{
+    h2 {
         font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-style: normal;
     }
-    h3{
+    h3 {
         font-family: "Roboto", sans-serif;
         font-weight: 300;
         font-style: normal;
     }
-    h6{
+    h6 {
         font-family: "Roboto", sans-serif;
         font-weight: 500;
         font-style: normal;
     }
-    p{
+    p {
         font-family: "Roboto", sans-serif;
         font-weight: 400;
         font-style: normal;
     }
 }
 
-@media (min-width:576px){
-    h1{
+@media (min-width: 576px) {
+    h1 {
         font-size: 35px;
     }
 }

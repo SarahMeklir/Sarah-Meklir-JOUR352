@@ -16,165 +16,809 @@
         <link href="style.css" rel="stylesheet" />
     </head>
 
- <body>
+    <body>
         <div class="container-fluid" id="topper">
-            <div class="row">
-                <div class="col-sm-6">
-                    <br /><br /><br />
-                    <h1 class="header">The Mets don't break up double plays</h1>
-                    <h2>A breakdown</h2>
-                    <h3>Adapted by Sarah Meklir</h3>
-                     <button id="button"><a href="mailto:smeklir@terpmail.umd.edu">Play/Pause</a></button>
-                </div
-                <div class="col-sm-6">
-                    <img src="IMG_8581%20(1).JPG" alt="sarah meklir headshot" />
-                </div>
+            <div class="container">
+            <video autoplay muted loop id="BackgroundVideo">
+                <source
+                    src="Homescreen video web project.mp4"
+                    type="video/mp4" />
+                Your browser does not support this video.
+            </video>
+            <div class="overlay">
+                <h1 class="header">The Mets don't break up double plays</h1>
+                <h2>A breakdown</h2>
+                <h3>Adapted by Sarah Meklir</h3>
+                <button id="myBtn" onclick="myFunction()">Pause</button>
             </div>
+            <script>
+                var video = document.getElementById("BackgroundVideo");
+                var btn = document.getElementById("myBtn");
+
+                function myFunction() {
+                    if (video.paused) {
+                        video.play();
+                        btn.innerHTML = "Pause";
+                    } else {
+                        video.pause();
+                        btn.innerHTML = "Play";
+                    }
+                }
+            </script>
+            </div>
+            <br/>
         </div>
         <div class="container-fluid" id="content">
-            <div class="row" class="blue">
-                <div class="col">
-                    <h1 id="backgroundsec" class="header">Background</h1>
-                </div>
-            </div>
             <div class="row">
-                <div id="authorsnote" class="col-sm-4">
-                    <h3>A note before reading: </h3>
-                    <p>The text is pulled directly from a YouTube video by user Jomboy Media from the show “Talkin’ Baseball”. I edited out some filler words (like, um, you know), changed formatting, and added notes for clarity. Otherwise, though, it is written as it was said in the video, rather than in standard journalistic syntax. However, since it is a roughtly 4,000 word transcript, I will not be putting quotation marks around each line said in the video. Instead, they will be styled differently to be easily differentiated.</p>
-                    <p>Some background on the “fight,” before we get into it: </p>
-                    <p>At the New York Mets home opening game Friday, March 24, second baseman Jeff McNeil had a tense exchange with Milwaukee Brewers first baseman Rhys Hoskins. Rhys Hoskins, a longtime Philadelphia Phillies player, already had a history of tension with McNeil. This time, it erupted after Hoskins slid hard as he ran to second base, trying to break up a double play being turned by McNeil. </p>
-                    <p>Hoskins’ slide knocked over McNeil, who blew up at the runner, yelling at him and continuing to vent his anger after the play. Benches cleared and both teams streamed onto the field, but they stayed separated by the baseball diamond as McNeil yelled at Hoskins across the field. Hoskins looked mostly bewildered, and the Mets challenged the slide for legality. When umpires reviewed the slide and it played on the big screen, McNeil went off again, cursing, and Hoskins made a crybaby gesture from the dugout and looked unbothered, if confused, at the intense reaction. </p>
-                    <p>If that was it, this wouldn’t be much of a story. But it wasn’t. The next day, Mets pitcher Yohan Ramirez responded with a 94 mph fastball thrown behind Hoskins. It’s an intimidation tactic used in baseball as retribution, and umpires thought it was intentional enough to throw Ramirez out of the game immediately. </p>
+                <div id="openingNote" class="col-sm-12">
+                <br/>
+                    <h2 class="subheading">A note before reading:</h2>
+                    <p>
+                        The text is pulled directly from a YouTube video by user
+                        Jomboy Media from the show “Talkin’ Baseball”. I edited
+                        out some filler words (like, um, you know), changed
+                        formatting, and added notes for clarity. Otherwise,
+                        though, it is written as it was said in the video,
+                        rather than in standard journalistic syntax. However,
+                        since it is a roughtly 4,000 word transcript, I will not
+                        be putting quotation marks around each line said in the
+                        video. Instead, they will be styled with navy background and white text with a Mets-orange border to be
+                        easily differentiated.
+                    </p>
+                    <p>
+                        Some background on the “fight,” before we get into it:
+                    </p>
+                    <p>
+                        At the New York Mets home opening game Friday, March 24,
+                        second baseman Jeff McNeil had a tense exchange with
+                        Milwaukee Brewers first baseman Rhys Hoskins. Rhys
+                        Hoskins, a longtime Philadelphia Phillies player,
+                        already had a history of tension with McNeil. This time,
+                        it erupted after Hoskins slid hard as he ran to second
+                        base, trying to break up a double play being turned by
+                        McNeil.
+                    </p>
+                    <p>
+                        Hoskins’ slide knocked over McNeil, who blew up at the
+                        runner, yelling at him and continuing to vent his anger
+                        after the play. Benches cleared and both teams streamed
+                        onto the field, but they stayed separated by the
+                        baseball diamond as McNeil yelled at Hoskins across the
+                        field. Hoskins looked mostly bewildered, and the Mets
+                        challenged the slide for legality. When umpires reviewed
+                        the slide and it played on the big screen, McNeil went
+                        off again, cursing, and Hoskins made a crybaby gesture
+                        from the dugout and looked unbothered, if confused, at
+                        the intense reaction.
+                    </p>
+                    <p>
+                        If that was it, this wouldn’t be much of a story. But it
+                        wasn’t. The next day, Mets pitcher Yohan Ramirez
+                        responded with a 94 mph fastball thrown behind Hoskins.
+                        It’s an intimidation tactic used in baseball as
+                        retribution, and umpires thought it was intentional
+                        enough to throw Ramirez out of the game immediately.
+                    </p>
                     <p>Now back to our regularly-scheduled programming...</p>
                 </div>
-                <div id="transcript" class="col-sm-8">
-                    <p>Topic number one: McNeil and Rhys Hoskins: the fight. I did a breakdown on it. I was very interested in it in my breakdown.</p>
+                <div id="transcript" class="col-sm-12">
+                    <p>
+                        Topic number one: McNeil and Rhys Hoskins: the fight. I
+                        did a breakdown on it. I was very interested in it in my
+                        breakdown.
+                    </p>
+                    <video autoplay muted loop id="EmbeddedVideo" src="First slide vid.mp4" type="video/mp4" controls>
+                    </video>
                 </div>
-                <div id="authorsnote" class="col-sm-4">
-                    <h2>Watching the replay</h2>
+                <div id="authorsnote" class="col-sm-12">
+                    <br/>
+                    <h2 class="subheading">Watching the replay</h2>
                 </div>
-                <div id="transcript" class="col-sm-8">
-                <!-- Insert video of original replay here -->
-                    <p>This part kind of really made me think, “wait what?” Because they watched the replay and then McNeil turns after watching the replay and he says, “you think that's [expletive] okay?” and you can see Rhys is like, “yeah?” </p>
-                <!-- Insert pull quote -->
-                    <p class="pull-quote">So there's just a disconnect between what's a good slide, what's a bad slide, what's allowed, what's not allowed, what's dirty, what's not dirty, what's aggressive and competitive and what's dirty.</p>
-                    <p>And McNeil seems to think that anything aggressive and competitive is dirty, because a lot of MLB players that I reached out to Trevor Plouffe who does “Talking Baseball,” and then he reached out to other guys [who said] that's not dirty it's aggressive. It was late but he's trying to break up the double play within the rules of the game and didn't get anyone injured. Dallas Braden tweeted out, “Dude learn to move your feet around the bag, you’re just planted there.”</p>
-                    <blockquote class="twitter-tweet"><p lang="en" dir="ltr">SAWFT. Learn the footwork around the bag &amp; how to protect yourself. If I’m the Mets hitter that gets drilled I just may take a walk into my own dugout. Tough spot for Ramirez. You wanna be a good teammate but you’d like to save those bullets for later. <br> <a href="https://t.co/NC0Zf1uySh">pic.twitter.com/NC0Zf1uySh</a></p>&mdash; Dallas Braden (@DALLASBRADEN209) <a href="https://twitter.com/DALLASBRADEN209/status/1774165671913587095?ref_src=twsrc%5Etfw">March 30, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <div id="transcript" class="col-sm-12">
+                    <p>
+                        This part kind of really made me think, “wait what?”
+                        Because they watched the replay and then McNeil turns
+                        after watching the replay and he says, “you think that's
+                        [expletive] okay?” and you can see Rhys is like, “yeah?”
+                    </p>
+    <!-- Insert pull quote -->
+                    <p class="pull-quote">
+                        So there's just a disconnect between what's a good
+                        slide, what's a bad slide, what's allowed, what's not
+                        allowed, what's dirty, what's not dirty, what's
+                        aggressive and competitive and what's dirty.
+                    </p>
+                    <p>
+                        And McNeil seems to think that anything aggressive and
+                        competitive is dirty, because a lot of MLB players that
+                        I reached out to Trevor Plouffe who does “Talking
+                        Baseball,” and then he reached out to other guys [who
+                        said] that's not dirty it's aggressive. It was late but
+                        he's trying to break up the double play within the rules
+                        of the game and didn't get anyone injured. Dallas Braden
+                        tweeted out, “Dude learn to move your feet around the
+                        bag, you’re just planted there.”
+                    </p>
+                    <blockquote class="twitter-tweet">
+                        <p lang="en" dir="ltr">
+                            SAWFT. Learn the footwork around the bag &amp; how
+                            to protect yourself. If I’m the Mets hitter that
+                            gets drilled I just may take a walk into my own
+                            dugout. Tough spot for Ramirez. You wanna be a good
+                            teammate but you’d like to save those bullets for
+                            later. <br />
+                            <a href="https://t.co/NC0Zf1uySh"
+                                >pic.twitter.com/NC0Zf1uySh</a
+                            >
+                        </p>
+                        &mdash; Dallas Braden (@DALLASBRADEN209)
+                        <a
+                            href="https://twitter.com/DALLASBRADEN209/status/1774165671913587095?ref_src=twsrc%5Etfw"
+                            >March 30, 2024</a
+                        >
+                    </blockquote>
+                    <script
+                        async
+                        src="https://platform.twitter.com/widgets.js"
+                        charset="utf-8"></script>
                 </div>
             </div>
             <div class="row">
-                <div id="authorsnote" class="col-sm-4">
-                    <h2>Looking into McNeil’s “dirty” past slide</h2>
+                <div id="authorsnote" class="col-sm-12">
+               <br/>
+                    <h2 class="subheading">Looking into McNeil’s “dirty” past slide:</h2>
                 </div>
-                <div id="transcript" class="col-sm-8">
-                    <p>I'm just going to give you the rabbit hole that I went down in chronological order. Number one: this picture was flying around the internet from Braves fans, saying, “Oh McNeil's done a dirty slide too, look at this slide he's way offline, out of the base path!” So I said all right, let's go find that play, I want to see if this is just a screenshot or is that really a dirty play.</p>
-          <!-- Insert video of McNeil's slide here -->
-                    <p>So I pulled up the play and here it is. [Daniel] Vogelbach hits it to second, McNeil slides and they run into each other. It's not dirty. He’s really just sliding way early. If you want to say the cut off of the grass right there, that's kind of early or late as just an easy way to gauge. If you slide after that it's a little late aggressive, if you slide before that you're giving yourself up. Because he's not really trying to get to the bag there, I think he didn't realize the the short stop was going to come into him, so I didn't think that was dirty. It ended up helping, but I didn't think that was dirty on McNeil's part to his credit. Now where things got weird is I went and I was like, well let's see if McNeil has any dirty slides.</p>
+                <div id="transcript" class="col-sm-12">
+                    <p>
+                        I'm just going to give you the rabbit hole that I went
+                        down in chronological order. Number one: this picture
+                        was flying around the internet from Braves fans, saying,
+                        “Oh McNeil's done a dirty slide too, look at this slide
+                        he's way offline, out of the base path!” So I said all
+                        right, let's go find that play, I want to see if this is
+                        just a screenshot or is that really a dirty play.
+                    </p>
+    <!-- WOO HOO Insert video of McNeil's slide here -->
+                    <video autoplay muted loop id="EmbeddedVideo" src="McNeils%20not-dirty%20slide.mp4" type="video/mp4" controls>
+                    </video>
+                    <p>
+                        So I pulled up the play and here it is. [Daniel]
+                        Vogelbach hits it to second, McNeil slides and they run
+                        into each other. It's not dirty. He’s really just
+                        sliding way early. If you want to say the cut off of the
+                        grass right there, that's kind of early or late as just
+                        an easy way to gauge. If you slide after that it's a
+                        little late aggressive, if you slide before that you're
+                        giving yourself up. Because he's not really trying to
+                        get to the bag there, I think he didn't realize the the
+                        short stop was going to come into him, so I didn't think
+                        that was dirty. It ended up helping, but I didn't think
+                        that was dirty on McNeil's part to his credit. Now where
+                        things got weird is I went and I was like, well let's
+                        see if McNeil has any dirty slides.
+                    </p>
                 </div>
             </div>
             <div class="row">
-                <div id="authorsnote" class="col-sm-4">
-                    <h2>Going deeper:</h2>
+                <div id="authorsnote" class="col-sm-12">
+                    <h2 class="subheading">Going deeper:</h2>
                 </div>
-                <div id="transcript" class="col-sm-6">
+                <div id="transcript" class="col-sm-12">
                     <p>So I went and I searched...</p>
                     <ol>
                         <li>...every time McNeil's been on first base and…</li>
-                        <li>…there's less than two outs so the team is going to try and turn a double play and… </li>
-                        <li>…there's a ground ball to the infield… </li>
+                        <li>
+                            …there's less than two outs so the team is going to
+                            try and turn a double play and…
+                        </li>
+                        <li>…there's a ground ball to the infield…</li>
                     </ol>
-                    <p>…and I wanted to see what that looks like. What I found kind of blew me away and I'll just show you all the videos I found.</p>
-                    <p>What you're looking for as this plays is McNeil's the runner on first and how he tries to break up double plays. </p>
-         <!-- Insert compilation video of McNeil's slides here -->
-                    <p>So as you can see, he doesn't try to break up the Double Play. It's almost like it's not an option in his head. I watched 160 instances in his career and I had to cut a lot down because this got too long. </p>
+                    <p>
+                        …and I wanted to see what that looks like. What I found
+                        kind of blew me away and I'll just show you all the
+                        videos I found.
+                    </p>
+                    <p>
+                        What you're looking for as this plays is McNeil's the
+                        runner on first and how he tries to break up double
+                        plays.
+                    </p>
+     <!-- WOO HOO Insert compilation video of McNeil's slides here -->
+                    <video autoplay muted loop id="EmbeddedVideo" src="Mcneil compilation one.mp4" type="video/mp4" controls>
+                    </video>
+                    <p>
+                        So as you can see, he doesn't try to break up the Double
+                        Play. It's almost like it's not an option in his head. I
+                        watched 160 instances in his career and I had to cut a
+                        lot down because this got too long.
+                    </p>
                     <p>A lot of them look like this:</p>
-        <!-- More compilation video here -->
-                    <p>I mean he's not even — he's being considerate, he's being gentlemanly, he's saying, “hey I don't want to get in the way of what you guys were doing. You want to turn the double play, go ahead and turn it. Who am I to try to stop it?”</p>
-        <!-- More compilation video here -->
-                    <p>What was that? You know? What was that one? If I go backwards here, when I was finding these, there were some like that, where he just runs straight through. Doesn’t slide at all, he never really tries to slide and get to the bag, he's not really trying to get in the way. </p>
-                    <p>So that was really weird to me. And kind of eye-opening. Oh, he's very respectful, so he thinks that you shouldn't try to break up double plays. Then I was like okay, let's go watch what Rhys Hoskins does — who's slower than McNeil. </p>
-                    <p>And McNeil has this reputation as a blue-collar grinder, tough player, so that kind of really surprised me to see all of that. I went to Rhys Hoskins who's slower, I think 20%. I think McNeil is 50% in sprint speed and Hoskins is like 25 [percent]. </p>
+    <!-- WOO HOO More compilation video here -->
+                    <video autoplay muted loop id="EmbeddedVideo" src="Mcneil%20compilation%20two.mp4" type="video/mp4" controls>
+                    </video>
+                    <p>
+                        I mean he's not even — he's being considerate, he's
+                        being gentlemanly, he's saying, “hey I don't want to get
+                        in the way of what you guys were doing. You want to turn
+                        the double play, go ahead and turn it. Who am I to try
+                        to stop it?”
+                    </p>
+    <!-- WOO HOO More compilation video here -->
+                    <video autoplay muted loop id="EmbeddedVideo" src="Mcneil%20compilation%20three.mp4" type="video/mp4" controls>
+                    </video>
+                    <p>
+                        What was that? You know? What was that one? If I go
+                        backwards here, when I was finding these, there were
+                        some like that, where he just runs straight through.
+                        Doesn’t slide at all, he never really tries to slide and
+                        get to the bag, he's not really trying to get in the
+                        way.
+                    </p>
+                    <p>
+                        So that was really weird to me. And kind of eye-opening.
+                        Oh, he's very respectful, so he thinks that you
+                        shouldn't try to break up double plays. Then I was like
+                        okay, let's go watch what Rhys Hoskins does — who's
+                        slower than McNeil.
+                    </p>
+                    <p>
+                        And McNeil has this reputation as a blue-collar grinder,
+                        tough player, so that kind of really surprised me to see
+                        all of that. I went to Rhys Hoskins who's slower, I
+                        think 20%. I think McNeil is 50% in sprint speed and
+                        Hoskins is like 25 [percent].
+                    </p>
                 </div>
-            <div class="row">
-                <div id="authorsnote" class="col-sm-4">
-                    <h2>Hoskins analysis time: </h2>
+                <div class="row">
+                    <div id="authorsnote" class="col-sm-12">
+                        <h2 class="subheading">Hoskins analysis time:</h2>
+                    </div>
+                    <div id="transcript" class="col-sm-12">
+                        <p>So here's every time Rhys Hoskins has...</p>
+                        <ol>
+                            <li>...been on first base and...</li>
+                            <li>...there's a grounder to the infield and...</li>
+                            <li>
+                                ...less than two outs so the team is going to
+                                try and turn and double play.
+                            </li>
+                        </ol>
+                        <p>Here's how he attacks it:</p>
+         <!-- WOO HOO Compilation of Hoskins' slides here -->
+                    <video autoplay muted loop id="EmbeddedVideo" src="Hoskins%20compilation%20one.mp4" type="video/mp4" controls>
+                    </video>
+                        <p>
+                            So as you can see, what Hoskins does is he gets his
+                            ass down the line quick, when he gets to that cutoff
+                            point that I was talking about, he gets big like a
+                            bear, like you're trying to scare a bear, “Ahhhh,”
+                            you know, throws his hands up gets kind of upright
+                            with his chest. Then drops down into the base and as
+                            you can see on these highlights, he induces a lot of
+                            bad throws and breaks up the double play.
+                        </p>
+                        <p class="pull-quote">
+                            He's never injured someone at second.
+                        </p>
+        <!-- WOO HOO Video continues -->
+                    <video autoplay muted loop id="EmbeddedVideo" src="Hoskins%20compilation%20two.mp4" type="video/mp4" controls>
+                    </video>
+                        <p>That's a good example of what he does.</p>
+                        <p class="pull-quote">
+                            He’s never injured the player. There might be
+                            contact, but within the rules, and it's winning
+                            baseball.
+                        </p>
+                        <p>
+                            I mean he's doing everything he can. He’s like, “hey
+                            I don't have speed so I'm not going to be safe here,
+                            let me try and do everything I can to play winning
+                            baseball,” and that's what he's doing. Again, I had
+                            to cut this down. There was just a lot of examples
+                            of this where he's inducing bad throws, putting
+                            pressure on the fielder, and it's working.
+                        </p>
+                    </div>
+                    <div id="authorsnote" class="col-sm-12">
+                        <p>
+                            Something to note if you're not a baseball fan as
+                            Jomboy says "I'm not going to be safe here," is the
+                            structure of double plays. In this case, there is a
+                            runner on first base, which means when the batter
+                            hits the ball and they run to first, the runner on
+                            first is *forced* to run to second. To "turn" a
+                            double play, a fielder is throwing the ball to get
+                            that runner out at second base, then *turning* with
+                            the ball and throwing immediately to first base to
+                            try and get the batter out before they reach first.
+                            The runner running to second base knows they are
+                            likely to be out, as Jomboy said referring to
+                            Hoskins, but they can still use techniques described
+                            in this deep dive to try to "break up" the double
+                            play.
+                        </p>
+                    </div>
                 </div>
-                <div id="transcript" class="col-sm-6">
-                   <p>So here's every time Rhys Hoskins has...</p>
-                    <ol>
-                        <li>...been on first base and...</li>
-                        <li>...there's a grounder to the infield and...</li>
-                        <li>...less than two outs so the team is going to try and turn and double play.</li>
-                    </ol>
-                    <p>Here's how he attacks it: </p>
-        <!-- Compilation of Hoskins' slides here -->
-                    <p>So as you can see, what Hoskins does is he gets his ass down the line quick, when he gets to that cutoff point that I was talking about, he gets big like a bear, like you're trying to scare a bear, “Ahhhh,” you know, throws his hands up gets kind of upright with his chest. Then drops down into the base and as you can see on these highlights, he induces a lot of bad throws and breaks up the double play.</p>
-                    <p class="pull-quote">He's never injured someone at second. </p>
-        <!-- Video continues -->
-                    <p>That's a good example of what he does.</p>
-                    <p class="pull-quote">He’s never injured the player. There might be contact, but within the rules, and it's winning baseball. </p>
-                    <p>I mean he's doing everything he can. He’s like, “hey I don't have speed so I'm not going to be safe here, let me try and do everything I can to play winning baseball,” and that's what he's doing. Again, I had to cut this down. There was just a lot of examples of this where he's inducing bad throws, putting pressure on the fielder, and it's working. </p>
+                <div class="row">
+                    <div id="authorsnote" class="col-sm-12">
+                        <h2 class="subheading">Comparison of baserunning style:</h2>
+                    </div>
+                    <div id="transcript" class="col-sm-12">
+                        <p>
+                            McNeil was the complete opposite. He was granting
+                            people double plays. I was very confused, I was like
+                            this is odd. I have so many more of these from
+                            McNeil see, I color-coded it.
+                        </p>
+                        <ol>
+                            <li>Pink was to the short stop</li>
+                            <li>Yellow was to the third baseman</li>
+                            <li>Blue was to the second baseman</li>
+                        </ol>
+                    </div>
+                    <div id="authorsnote" class="col-sm-12">
+                        <p>
+                            This means the ball was *hit* to the short stop,
+                            third baseman, or second baseman on each of these
+                            plays.
+                        </p>
+                    </div>
+                    <div id="transcript" class="col-sm-12">
+                        <p>
+                            Rhys breaks up a lot of double plays by using his
+                            big body and getting to the bag down late. Again
+                            he's never hurt anyone, it's just that's it's still
+                            part of the game.
+                        </p>
+                        <p class="pull-quote">
+                            The rules didn't make this not part of the game, but
+                            I'm beginning to think the Mets might think the
+                            rules made this not part of the game.
+                        </p>
+                        <p>
+                            I kept digging. First I wanted to compare Rhys and
+                            McNeil. Again, McNeil is faster. Here's the ball hit
+                            to the short stop and flipped to second base.
+                        </p>
+         <!-- WOO HOO Video compilation of Hoskins -->
+                    <video autoplay muted loop id="EmbeddedVideo" src="comparison%20one.mp4" type="video/mp4" controls>
+                    </video>
+                        <p>
+                            A very similar play, Rhys is already in frame and
+                            he's sliding. He’s not going down until he hits that
+                            cut off point of the grass. Whereas McNeil is giving
+                            himself up way early, has no interest in being part
+                            of the play, and just says there you go, go ahead
+                            turn it. So that was wild.
+                        </p>
+                        <p>Then I said okay,</p>
+                        <ol>
+                            <li>
+                                let me find one in a close game, because that's
+                                unfair if one game doesn't matter and the other
+                                game is really close. So up top, you have
+                                Phillies. They are tied at zero in the bottom of
+                                the fourth inning, bases loaded. Down below, the
+                                Mets are up two in the sixth inning.
+                            </li>
+                            <li>
+                                I also wanted to find balls that were hit
+                                similar.
+                            </li>
+                        </ol>
+                        <p>
+                            So if you see on my Premiere timeline, this blue
+                            marker, that's when the ball hits the bat. So ball
+                            hits the bat, I sync that up, and then the ball is
+                            hit to the shortstop.
+                        </p>
+         <!-- WOO HOO comparison video compilation plays -->
+                    <video autoplay muted loop id="EmbeddedVideo" src="comparison%20two.mp4" type="video/mp4" controls>
+                    </video>
+                        <p>
+                            And as they flip it to the second baseman, you can
+                            see Rhys Hoskins is in frame and he's about to get
+                            big on him like a bear and then drop down to make it
+                            hard. And McNeil just comes into frame now and has
+                            no interest in playing competitive baseball on this
+                            play, just gives himself up and makes it easy.
+                        </p>
+                        <p>
+                            I was like, that's crazy. Then I wanted to make sure
+                            people didn't think I was cherry-picking a
+                            bajillion, so I put two Rhys Hoskins on the right
+                            and eight McNeil on the left, and again, this point
+                            where the blue marker is on my timeline is when the
+                            bat hits the ball.
+                        </p>
+        <!-- WOO HOO comparison video plays again -->
+                    <video autoplay muted loop id="EmbeddedVideo" src="comparison%20three.mp4" type="video/mp4" controls>
+                    </video>
+                        <p>
+                            And if you watch through to when Rhys gets to the
+                            bag he's by the cut on the two on the right already
+                            and McNeil is nowhere in frame on the bottom four
+                            and on the top four he's going down already and not
+                            really trying to break it up.
+                        </p>
+                        <p>
+                            That blew me away, man. What's going on here? Is
+                            this just a McNeil thing? Is this a Mets thing? Is
+                            this an around-the-league thing? Like what is this?
+                            Again, I sent videos to some players that I know and
+                            talk to and they were like, “What? That is crazy,
+                            what is going on?” They’re like, “Rhys looks normal,
+                            that's what you're supposed to do.”
+                        </p>
+                    </div>
                 </div>
-                <div id="authorsnote" class="col-sm-4">
-                    <p>Something to note if you're not a baseball fan as Jomboy says "I'm not going to be safe here," is the structure of double plays. In this case, there is a runner on first base, which means when the batter hits the ball and they run to first, the runner on first is *forced* to run to second. To "turn" a double play, a fielder is throwing the ball to get that runner out at second base, then *turning* with the ball and throwing immediately to first base to try and get the batter out before they reach first. The runner running to second base knows they are likely to be out, as Jomboy said referring to Hoskins, but they can still use techniques described in this deep dive to try to "break up" the double play.</p>
+                <div class="row">
+                    <div id="authorsnote" class="col-sm-12">
+                        <h2 class="subheading">Mets sliding ethos:</h2>
+                    </div>
+                    <div id="transcript" class="col-sm-12">
+                        <p>
+                            Then I had to dig deeper because I was watching the
+                            Mets game last night and Lindor, on a double play
+                            ball, ran through the bag. And then the announcers
+                            kind of talked about the strategy to that. It was a
+                            double play to end the first inning. Lindor just
+                            runs through the bag and they explain why here.
+                        </p>
+         <!-- WOO HOO comparison video plays again -->
+                    <video autoplay muted loop id="EmbeddedVideo" src="ODD%20METS%20CLIP.mp4" type="video/mp4" controls>
+                    </video>
+                    </div>
+                    <div id="authorsnote" class="col-sm-12">
+                        <p>
+                            Clip transcript: “–play that ended the bottom of the
+                            first inning. Javi Báez with the glove flip, and you
+                            see that Lindor does not slide there. This is
+                            something that is relatively new in the game, where
+                            players are being instructed to do this. Yes, and
+                            the idea is that if they don't get the out there,
+                            they have to go tag and the running from third is
+                            going to score.”
+                        </p>
+                    </div>
+                    <div id="transcript" class="col-sm-12">
+                        <p>
+                            Okay, if they don't get the out, they have to go tag
+                            him and the runner on third will score. So if they
+                            don't get the out at second, so if the fielder…
+                            what? If the fielder botches the — if the fielder
+                            misses the bag with his foot? That’s what they're
+                            preparing for? There’s runners on first and second,
+                            so they're saying don't try to slide and make this
+                            [competitive]. What?
+                        </p>
+                        <p>
+                            Okay, standard strategy would be, hey, try to do a
+                            late slide and make this dude uncomfortable turning
+                            this double play, within the rules and without
+                            injuring him. And if he throws the ball away, the
+                            runner that started on second that's at third,
+                            rounding third right now, will score on a bad throw.
+                            So force a bad throw or make him so uncomfortable he
+                            doesn't want to throw it away and he eats the play
+                            and doesn't turn two.
+                        </p>
+                    </div>
+                    <div id="authorsnote" class="col-sm-12">
+                        <p>
+                            That means standard strategy to break up a double
+                            play would be to get big "like a bear," as Hoskins
+                            demonstrates, in hopes of messing up the throw to
+                            first base or "eating" the play, which is to abandon
+                            the throwing attempt altogether.
+                        </p>
+                    </div>
+                    <div id="transcript" class="col-sm-12">
+                        <p>
+                            They’re saying the Mets are instructing them [their
+                            players] to casually jog through the base in case
+                            this dude's [the second baseman’s] foot isn't on the
+                            bag, so then he would turn around and go tag Lindor.
+                            And while he's doing that the runner on third will
+                            score. That’s crazy weird.
+                        </p>
+        <!-- insert pull quote -->
+                        <p class="pull-quote">
+                            I think the Mets think you can't break up double
+                            plays.
+                        </p>
+                        <p>
+                            So I watched this last night. I was like wait, what
+                            are you doing? What’s happening? Then I went back
+                            into the deep dives and I found all the other Mets
+                            players last year that kind of have speed and should
+                            be hustling and breaking up double plays. And I
+                            searched for instances when they would be tasked to
+                            make the dude uncomfortable to throw it, so here's
+                            what I found:
+                        </p>
+        <!-- WOO HOO Mets comparison video plays -->
+                    <video autoplay muted loop id="EmbeddedVideo" src="BAD%20METS.mp4" type="video/mp4" controls>
+                    </video>
+                        <p>They all do it.</p>
+                        <p>What is that?</p>
+        <!-- insert drawing of baseline and runner slowing down diagram -->
+                        <p>
+                            There's not a runner on second that could be
+                            rounding third in this one, so that strategy doesn't
+                            even make sense — even though it doesn't make sense
+                            already. This is a tied game in the third inning and
+                            instead of trying to make break up the double play…
+                        </p>
+                        <p>
+                            Where was he? Where are they? What is going on? My
+                            only saving grace was — and Mets fans if you're
+                            still watching I'm so sorry. I was running this by
+                            Mets fans in the office being like, “Guys what
+                            what's going on?” They said they never noticed this.
+                            [Pete} Alonso and [Mark] Canha last year, they acted
+                            normal.
+                        </p>
+         <!-- WOO HOO Good Mets video plays -->
+                    <video autoplay muted loop id="EmbeddedVideo" src="GOOD%20METS.mp4" type="video/mp4" controls>
+                    </video>
+                        <p>
+                            That is the same as the Rhys Hoskin slide, you know,
+                            good job by Pete. He’s at the cut of the grass, he's
+                            getting down late, he's throwing his arms up, he's
+                            trying to make them uncomfortable. Here’s Alonzo
+                            again, look at this. Nice. So some guys, I guess,
+                            aren't listening to whoever's telling them to not do
+                            this. Here’s Canha and he's playing hard. He does
+                            not want them to turn this. Look at that slide, you
+                            know, and he gets the player here, Oswaldo, and
+                            that's legal. That’s fair. Oswaldo has got to move
+                            his feet; you’ve got to come through the bag, you
+                            can't just stand on the bag. So Alonzo and Canha,
+                            great stuff.
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div id="authorsnote" class="col-sm-4">
-                    <h2>Comparison of baserunning style:</h2>
+                <div class="row">
+                    <div id="authorsnote" class="col-sm-12">
+                        <h2 class="subheading">A disclaimer:</h2>
+                    </div>
+                    <div id="transcript" class="col-sm-12">
+                        <p>
+                            And then I thought okay, before I make this video, I
+                            got to check around the league. I got to make sure
+                            this isn't widespread and just because the Yankees
+                            don't do it I've never noticed it. Or you know even
+                            Mets fans that I talked to, they didn't even notice
+                            it so I checked around the league and I'm going to
+                            give you guys the link to check. But yes, not every
+                            team is doing this. Sure, there's slow guys that
+                            they don't get down the line, they're not going to.
+                            There’s guys that might be injured or hurting or the
+                            game's lopsided, but in most cases when it's a close
+                            game and you have a double play ball, guys are
+                            trying to break up the double play. They’re trying
+                            to slide late, make that fielder uncomfortable
+                            within the rules of the law and break up the double
+                            play.
+                        </p>
+                        <p>
+                            So that at least saved my soul a little bit. But I
+                            don't know what's going on in Queens! It seems like
+                            they're instructed — I think maybe they have the
+                            rule wrong. So I will post a
+                            <a
+                                href="https://baseballsavant.mlb.com/statcast_search?hfPT&hfAB&hfGT=R%7C&hfPR&hfZ&hfStadium&hfBBL=5%7C6%7C&hfNewZones&hfPull&hfC&hfSea=2023%7C&hfSit&player_type=batter&hfOuts=0%7C1%7C&hfOpponent&pitcher_throws&batter_stands&hfSA&game_date_gt&game_date_lt&hfMo&hfTeam=NYM%7C&home_road&hfRO=1%7C7%7C8%7C&position&hfInfield&hfOutfield&hfInn&hfBBT=ground%5C.%5C.ball%7C&hfFlag&metric_1=bat_score_diff&metric_1_gt=0&metric_1_lt=3&metric_2=api_h_launch_speed&metric_2_gt=80&metric_2_lt=95&group_by=team&min_pitches=0&min_results=0&min_pas=0&sort_col=pitches&player_event_sort=api_p_release_speed&sort_order=desc#results"
+                                >link</a
+                            >
+                            to this search that I did for you guys so you can go
+                            check it out.
+                        </p>
+          <!-- WOO HOO comparison video plays again -->
+                        <video autoplay muted loop id="EmbeddedVideo" src="Other teams video.mp4" type="video/mp4" controls>
+                        </video>
+                    </div>
                 </div>
-                <div id="transcript" class="col-sm-6">
-                   <p>McNeil was the complete opposite. He was granting people double plays. I was very confused, I was like this is odd. I have so many more of these from McNeil see, I color-coded it.</p>
-                    <ol>
-                        <li>Pink was to the short stop</li>
-                        <li>Yellow was to the third baseman</li>
-                        <li>Blue was to the second baseman</li>
-                    </ol>
+                <div class="row">
+                    <div id="authorsnote" class="col-sm-12">
+                        <h2 class="subheading">Methods:</h2>
+                        <p>
+                            Here's how he found all these instances using the
+                            tool linked above.
+                        </p>
+                    </div>
+                    <div id="transcript" class="col-sm-12">
+                        <p>Here are all the parameters. I did…</p>
+                        <ol>
+                            <li>2023 season</li>
+                            <li>
+                                Balls hit to the shortstop and third baseman
+                            </li>
+                            <li>
+                                There’s zero outs or one out — so you need two
+                            </li>
+                            <li>
+                                Runners not on second, not on third, runner on
+                                first — so you're going to two
+                            </li>
+                            <li>Batted ball type: ground ball</li>
+                            <li>
+                                And then just because you get 200 options, to
+                                find better ones or to even limit it a little
+                                more, I did batting score difference: three runs
+                                — so it's a three-run game
+                            </li>
+                            <li>
+                                And then I did the exit velo on the ball: 80 mph
+                                to 95 miles per hour — because if it's over 95
+                                they're going to turn that so fast that the
+                                runner doesn't really have time to get down
+                                there. But anywhere between 80 and 95, that's a
+                                double play ball where the runner has time, with
+                                a lead, to go make something happen, break it up
+                            </li>
+                            <li>
+                                Then all you got to do is change the team. So
+                                you can check out how your team does this.
+                            </li>
+                        </ol>
+                        <p>
+                            The only warning I'll give is: [Seattle] Mariners,
+                            you guys were very similar to the Mets, but I think
+                            it's mostly Eugenio Suárez from last year.
+                        </p>
+                        <p>
+                            But man, go to the [Los Angeles] Angels who last
+                            year were — well, they were in it for a while, and
+                            then in the last two months they weren't. They had
+                            17 instances because we really dwindled it down, and
+                            if you just watch a bunch of theirs I'll pop them
+                            all out and we'll just watch.
+                        </p>
+                        <p>
+                            So you guys can see, if you want to do this at home,
+                            this is how you do it: just hold option or command,
+                            open new tab, and then just skip ahead to the ball…
+                            and… got down. Threw the hands up. Tried to break it
+                            up. Yep, hands up at the cut, trying to get down,
+                            very normal. Here we go, right there, hands up,
+                            sliding late, trying to break it up.
+                        </p>
+                        <p>
+                            So Angels fans if you tuned in, you got other
+                            problems you care about, but this isn't one.
+                        </p>
+                        <p>
+                            This is what I did all last night, I just checked
+                            every team to figure out — I just didn't want to
+                            make a video about the Mets and have it be
+                            widespread around the league. But if you do this
+                            same search and you find the Mets… it hurts my
+                            baseball soul. You know? Look at this.
+                        </p>
+         <!-- WOO HOO video of nimmo plays  -->
+                        <video autoplay muted loop id="EmbeddedVideo" src="Nimmo video.mp4" type="video/mp4" controls>
+                        </video>
+                        <p>
+                            What are we doing? what is going on? What are we
+                            doing? This is [Brandon] Nimmo! He’s fast. So yeah,
+                            you can go to this search and I'll put the link in
+                            the YouTube — what are we doing? And you can see
+                            what the organization does. Do they tell people to
+                            break up the double play or do they tell people to
+                            run away and not try to make anyone uncomfortable
+                            and just give up and say, “Oh you guys want to turn
+                            two, who am I to get in the way?”
+                        </p>
+                        <p>
+                            Very bizarre behavior. I don't really get it. Like I
+                            said, it kind of hurts my soul a little bit to
+                            watch.
+                        </p>
+                    </div>
                 </div>
-                <div id="authorsnote" class="col-sm-4">
-                    <p>This means the ball was *hit* to the short stop, third baseman, or second baseman on each of these plays.</p>
+                <div class="row">
+                    <div id="authorsnote" class="col-sm-12">
+                        <h2 class="subheading">
+                            Rule explanation, additional Hoskins-McNeil
+                            analysis:
+                        </h2>
+                    </div>
+                    <div id="transcript" class="col-sm-12">
+                        <p>
+                            You can't slide past the bag. All you have to do is
+                            slide in the vicinity of the bag, maintain contact
+                            with the bag, and you're fine. Rhys's slide was a
+                            legal slide. The reason it looks dirty — and I'll go
+                            back to the Premiere video of it — the reason it
+                            looks dirty is because McNeil bobbles this ball.
+                        </p>
+         <!-- WOOHOO insert original vid of slide again -->
+                        <video autoplay muted loop id="EmbeddedVideo" src="First slide vid.mp4" type="video/mp4" controls>
+                        </video>
+                        <p>
+                            Also, McNeil just stands on top of the bag because I
+                            think he thinks you can't do this. But you can.
+                            You’re supposed to run through it. A lot of times
+                            you see the second baseman run through the bag,
+                            catch it, and move their body forward with momentum.
+                        </p>
+                        <p>
+                            Now this throw wasn't great and then he drops the
+                            transfer, so instead of watching out for the runner,
+                            he's worried about the ball, maybe. But he's just
+                            planted. Normally he throws that and that back leg
+                            comes up and that's what happens when Rhys goes
+                            down.
+                        </p>
+                        <p>
+                            Instead, the back leg stays down because he didn't
+                            throw it. Think about a throwing motion; that leg
+                            would swing forward and he'd be on the other side of
+                            the bag.
+                        </p>
+                    </div>
+                    <div id="authorsnote" class="col-sm-12">
+                        <p>
+                            He's saying the reason Hoskins collided with McNeil
+                            is because usually when turning a double play, the
+                            second baseman's leg lifts up and out of the way
+                            with the momentum from the follow-through of the
+                            throw. McNeil's foot was in the way because he
+                            bobbled the ball and never had a chance to throw it,
+                            so he never had a chance for his foot to lift on the
+                            follow-through.
+                        </p>
+                    </div>
+                    <div id="transcript" class="col-sm-12">
+                        <p>
+                            Rhys doesn't know he's going to bobble the ball. He
+                            bobbles the ball.
+                        </p>
+                        <p>
+                            A lot of people said that Rhys cleated him, and I
+                            was like, what do you mean? The spikes weren't that
+                            up. They’re the same level as the foot. Spikes up
+                            [would] get him in the shin. And in some of videos
+                            showed earlier, they did have spikes up.
+                        </p>
+                        <p>
+                            And then it is awkward that he lands on the other
+                            foot, but again, at the time Rhys goes down he
+                            doesn't know McNeil going to bobble this ball and
+                            stay planted with both legs. He thinks he's going to
+                            throw the ball and end up over here.
+                        </p>
+                    </div>
                 </div>
-                <div id="transcript" class="col-sm-6">
-                    <p>Rhys breaks up a lot of double plays by using his big body and getting to the bag down late. Again he's never hurt anyone, it's just that's it's still part of the game. </p>
-                    <p class="pull-quote">The rules didn't make this not part of the game, but I'm beginning to think the Mets might think the rules made this not part of the game.</p>
-                    <p>I kept digging. First I wanted to compare Rhys and McNeil. Again, McNeil is faster. Here's the ball hit to the short stop and flipped to second base. </p>
-        <!-- Video compilation of Hoskins -->
-                    <p>A very similar play, Rhys is already in frame and he's sliding. He’s not going down until he hits that cut off point of the grass. Whereas McNeil is giving himself up way early, has no interest in being part of the play, and just says there you go, go ahead turn it. So that was wild. </p>
-                    <p>Then I said okay, </p>
-                    <ol>
-                        <li>let me find one in a close game, because that's unfair if one game doesn't matter and the other game is really close. So up top, you have Phillies. They are tied at zero in the bottom of the fourth inning, bases loaded. Down below, the Mets are up two in the sixth inning. </li>
-                        <li>I also wanted to find balls that were hit similar. </li>
-                    </ol>
-        <!-- comparison video compilation plays -->
-                    <p>So if you see on my Premiere timeline, this blue marker, that's when the ball hits the bat. So ball hits the bat, I sync that up, and then the ball is hit to the shortstop.</p>
-        <!-- comparison video compilation plays -->
-                    <p>And as they flip it to the second baseman, you can see Rhys Hoskins is in frame and he's about to get big on him like a bear and then drop down to make it hard. And McNeil just comes into frame now and has no interest in playing competitive baseball on this play, just gives himself up and makes it easy. </p>
-                    <p>I was like, that's crazy. Then I wanted to make sure people didn't think I was cherry-picking a bajillion, so I put two Rhys Hoskins on the right and eight McNeil on the left, and again, this point where the blue marker is on my timeline is when the bat hits the ball. </p>
-        <!-- comparison video plays again -->
-                    <p>And if you watch through to when Rhys gets to the bag he's by the cut on the two on the right already and McNeil is nowhere in frame on the bottom four and on the top four he's going down already and not really trying to break it up. </p>
-                    <p>That blew me away, man. What's going on here? Is this just a McNeil thing? Is this a Mets thing? Is this an around-the-league thing? Like what is this? Again, I sent videos to some players that I know and talk to and they were like, “What? That is crazy, what is going on?” They’re like, “Rhys looks normal, that's what you're supposed to do.”</p>
+                <div class="row">
+                    <div id="authorsnote" class="col-sm-12">
+                        <h2 class="subheading">Conclusion:</h2>
+                    </div>
+                    <div id="transcript" class="col-sm-12">
+                        <p>
+                            So it ends up — it's bad and it doesn't look good,
+                            but it's mostly incidental and it's still a legal
+                            slide. I just think the Mets have been told that
+                            those slides are illegal and that's why we had this
+                            confusion: “You think that's [ __ ] okay?” “You're
+                            allowed to slide, what's wrong with that?”
+                        </p>
+                    </div>
                 </div>
-            </div>
-            <div class="row">
-                <div id="authorsnote" class="col-sm-4">
-                    <h2>Digging into Mets sliding ethos</h2>
-                </div>
-                <div id="transcript" class="col-sm-6">
-                    <p>Then I had to dig deeper because I was watching the Mets game last night and Lindor, on a double play ball, ran through the bag. And then the announcers kind of talked about the strategy to that. It was a double play to end the first inning. Lindor just runs through the bag and they explain why here.</p>
-               
-                </div>
-            </div>
-            <div class="row" class="blue">
-                <div class="col">
-                    <h1 id="education" class="header">Education</h1>
-                </div>
-            </div>
-            </div>
-            <div class="row">
-                <div id="authorsnote" class="col">
-                    <h3>Bachelors of Arts</h3>
-                    <h4>University of Maryland</h4>
-                    <h6>2025</h6>
+                <div class="row">
+                    <div id="authorsnote" class="col">
+                        <h2 class="subheading">Original video:</h2>
+                        <iframe
+                            width="560"
+                            height="315"
+                            src="https://www.youtube.com/embed/jDSLbdXWRhw?si=G0tx9DELoLmtM7ks"
+                            title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
         </div>

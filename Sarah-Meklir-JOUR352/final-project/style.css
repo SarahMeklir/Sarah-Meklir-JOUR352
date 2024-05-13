@@ -3,150 +3,155 @@
  * mets blue:  #002D72
  * light blue: #429DFF
  * dark green: #3E582A
+ * slate blue: #678ab0
 */
-#BackgroundVideo {
-    position: top;
-    right: 0;
-    bottom: 0;
-    max-width: 100%;
-    max-height: 100%;
-}
-.container {
-    position: relative;
-    padding: 0;
-    margin: 0;
-}
-.container video {
-    position: top;
-    z-index: 0;
-    margin: 0;
-}
-.overlay {
-    position: absolute;
-    left: 32;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-    background: rgba(255, 89, 16, 0.54);
-    padding: 10px;
-    color: #f1f1f1;
-    max-width: 100%;
-}
-
-#myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-}
-#myBtn:hover {
-    background: #ff5910;
-    color: #002d72;
-    border: medium inset;
-    border-color: #002d72;
-}
-.headline {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.roboto-bold {
-    font-family: "Roboto", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-.roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-.roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.roboto-light {
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-}
-.roboto-thin {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-}
-
 @media {
-    #topper {
-        background-color: #002d72;
+    h1 {
+        font-size: 25px;
+        font-style: bold;
+    }
+    h2{
+        font-size: 20px;
+        font-style: italic;
+    }
+    h3 {
+        font-size: 15px;
+    }
+    overlay {
+        font-size: small;
+        position: relative;
+        top: 50px;
+        right: 0;
+        bottom: 0;
+        background: rgb(255, 89, 16);
+        padding: 5px;
+        color: #f1f1f1;
+        max-width: 100%;
+        margin-bottom: 5px;
+    }
+    #myBtn {
+        padding: 5px;
+        font-size: 12px;
+        width: 100px;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+        margin: 5px;
+    }
+    #myBtn:hover {
+        padding: 5px;
+        font-size: 12px;
+        width: 100px;
+        background: #ff5910;
+        color: white;
+    }
+    header {
+        font-size: 20px;
+        background: #ff5910;
+    }
+    topper {
+        position: relative;
+        background: black;
+    }
+    #BackgroundVideo {
+        position: top;
+        right: 0;
+        bottom: 0;
+        max-width: 100%;
+        max-height: 100%;
+    }
+    .headline {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
+    .roboto-bold {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+    }
+    .roboto-medium {
+        font-family: "Roboto", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+    }
+    .roboto-regular {
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .roboto-light {
+        font-family: "Roboto", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+    }
+    .roboto-thin {
+        font-family: "Roboto", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+    }
     .pull-quote {
         float: left();
-        max-width: 200;
+        max-width: 100%;
         color: #ff5910;
-        font-size: 30px;
+        font-size: 25px;
         line-height: 1;
-        font-style: italic;
-        padding: 14px;
+        font-style: bold, italic;
+        padding: 10px;
+        background: white;
     }
     #backgroundsec {
-        background: #429dff;
+        background: white;
     }
     #content {
-        background: #429dff;
+        background: white;
     }
     .subheading {
-        color: #002d72;
+        color: white;
         font: roboto, bold;
         padding-top: 5px;
-        text-align: center;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #ff5910;
+        text-align: left;
+        background: #323863;
     }
     #authorsnote {
-        color: #002d72;
-        background: beige;
-        text-align: center;
-        padding-top: 10px;
+        color: white;
+        background: #323863;
+        text-align: left;
+        padding-top: 5px;
+        padding-left: 18px;
+        padding-right: 35px;
+        font-size: 15px;
     }
     #openingNote {
-        background: beige;
+        background: #323863;
         text-align: left;
+        color: white;
+        font-size: 15px;
+        padding-right: 8px;
+        padding-left: 18px;
+        padding-top: 35px;
+        padding-bottom: 8px;
     }
     #transcript {
-        color: white;
-        background: #002d72;
-        border: outset;
-        border-width: 2px;
-        border-color: #ff5910;
+        color: black;
+        background: white;
+        font-size: 15px;
         padding-top: 5px;
+        margin-left: 5px;
+        margin-right: 35px;
     }
-    #pull-quote {
-        background: rgba(0, 0, 255, 0.68);
-        color: #ff5910;
-    }
+
     #EmbeddedVideo {
-        max-width: 50%;
-        max-height: 50%;
+        max-width: 100%;
+        max-height: 100%;
     }
     #button {
         color: #3e582a;
         background: #d9ffbb;
     }
 
-    h1 {
-        margin: 40px 0px 0px 0px;
-        font-size: 30px;
-        font-family: "Roboto", sans-serif;
-        font-weight: 700;
-        font-style: normal;
-    }
     h2 {
         font-family: "Roboto", sans-serif;
         font-weight: 500;
@@ -170,7 +175,102 @@
 }
 
 @media (min-width: 576px) {
-    h1 {
-        font-size: 35px;
+    .overlay {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 89, 16, 0.54);
+        padding: 10px;
+        color: #f1f1f1;
+        max-width: 100%;
+        margin-bottom: 5px;
     }
+
+    #myBtn {
+        width: 200px;
+        font-size: 18px;
+        padding: 10px;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+        margin: 5px;
+    }
+    #myBtn:hover {
+        width: 200px;
+        font-size: 18px;
+        padding: 10px;
+        background: #ff5910;
+        color: white;
+    }
+    #topper {
+        background-color: black;
+        position: relative;
+        max-height: initial;
+    }
+
+    .pull-quote {
+        float: left();
+        max-width: 200;
+        color: #ff5910;
+        font-size: 30px;
+        line-height: 1;
+        font-style: italic;
+        padding: 14px;
+        background: white;
+    }
+    #EmbeddedVideo {
+        max-width: 100%;
+        max-height: 100%;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    #authorsnote {
+        color: white;
+        background: #323863;
+        text-align: left;
+        padding-top: 10px;
+        padding-left: 45px;
+        padding-right: 140px;
+        font-size: 17px;
+
+    }
+    #openingNote {
+        background: #323863;
+        text-align: left;
+        color: white;
+        padding-right: 120px;
+        padding-left: 60px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        font-size: 17px;
+
+    }
+    .subheading{
+        text-align: center;
+    }
+    #transcript {
+        color: black;
+        background: white;
+        padding-top: 5px;
+        margin-left: 35px;
+        margin-right: 100px;
+        font-size: 17px;
+    }
+    h1 {
+        font-size: 32px;
+        font-style: bold;
+        margin-left: 40;
+        padding-right: 20px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+    }
+    h2{
+        font-size: 30px;
+        font-style: italic;
+    }
+    h3 {
+        font-size: 20px;
+    }
+
+
 }
